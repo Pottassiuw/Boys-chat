@@ -1,25 +1,63 @@
+import { fetchRedis } from "@/helpers/redis";
+import { db } from "@/lib/db";
 import { addFriendValidator } from "@/lib/validations/add-friend";
+import { getServerSession } from "next-auth";
+import { z } from "zod";
+import { authOptions } from "../../auth/[...nextauth]/route";
 
-export async function POST(req: Request, res: Response) {
-  console.log(process.env.UPSTASH_REDIS_REST_URL);
+export async function POST(req: Request) {
   try {
     const body = await req.json();
 
     const { email: emailToAdd } = addFriendValidator.parse(body.email);
+    const idToAdd = (await fetchRedis(
+      "get",
+      `user:email:${emailToAdd}`
+    )) as string;
+    if (!idToAdd) {
+      return new Response("User not found", { status: 400 });
+    }
 
-    const RESTResponse = await fetch(
-      `${process.env.UPSTASH_REDIS_REST_URL}/get/user:email${emailToAdd}`,
-      {
-        headers: {
-          Authorization: `Bearer ${process.env.UPSTASH_REDIS_REST_TOKEN}`,
-        },
-        cache: "no-store",
-      }
-    );
+    const session = await getServerSession(authOptions);
+    if (!session) {
+      return new Response("Unauthorized", { status: 401 });
+    }
 
-    const data = (await RESTResponse.json()) as { result: string };
-    console.log(data);
+    if (idToAdd === session.user.id) {
+      return new Response("You can't add yourself", { status: 400 });
+    }
+    //*Check if the user already exists
+    const alreadyExists = (await fetchRedis(
+      "sismember",
+      `user:${idToAdd}:incoming_friend_request`,
+      session.user.id
+    )) as 0 | 1;
 
-    const idToAdd = data.result;
-  } catch (error) {}
+    if (alreadyExists) {
+      return new Response("User already exists", { status: 400 });
+    }
+    const alreadFriends = (await fetchRedis(
+      "sismember",
+      `user:${idToAdd}:friends`,
+      idToAdd
+    )) as 0 | 1;
+
+    if (alreadyExists) {
+      return new Response("User already exists", { status: 400 });
+    }
+    if (alreadFriends) {
+      return new Response("Friend already exists", { status: 400 });
+    }
+
+    //*valid request
+
+    db.sadd(`user:${idToAdd}:incoming_friend_request`, session.user.id);
+
+    return new Response("Friend request sent", { status: 200 });
+  } catch (error) {
+    if (error instanceof z.ZodError) {
+      return new Response("Invalid request payload", { status: 422 });
+    }
+    return new Response("Invalid request", { status: 400 });
+  }
 }

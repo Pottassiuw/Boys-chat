@@ -13,7 +13,7 @@ interface AddFriendButtonProps {}
 
 type FormData = z.infer<typeof addFriendValidator>;
 
-const AddFriendButton: FC<AddFriendButtonProps> = ({}) => {
+const AddFriendButton: FC<AddFriendButtonProps> = () => {
   const [showSuccesState, setShowSuccesState] = useState<boolean>(false);
   const {
     register,
@@ -54,7 +54,7 @@ const AddFriendButton: FC<AddFriendButtonProps> = ({}) => {
         htmlFor="email"
         className="block text-sm font-medium leading-6 text-gray-900"
       >
-        Add friend by email!
+        Add friend by E-mail!
       </label>
 
       <div className="mt-2 flex gap-4">
