@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import { FC } from "react";
 import { Button } from "./ui/button";
@@ -28,8 +28,7 @@ const AddFriendButton: FC<AddFriendButtonProps> = ({}) => {
     try {
       const validatedEmail = addFriendValidator.parse({ email });
 
-      await axios.post(`/api/friends/add`, { email: validatedEmail });
-
+      await axios.post("/api/friends/add", { email: validatedEmail });
       setShowSuccesState(true);
     } catch (error) {
       if (error instanceof z.ZodError) {
