@@ -4,6 +4,8 @@ import { addFriendValidator } from "@/lib/validations/add-friend";
 import { getServerSession } from "next-auth";
 import { z } from "zod";
 import { authOptions } from "../../auth/[...nextauth]/route";
+import { pusherServer } from "@/lib/pusher";
+import { toPusherKey } from "@/lib/utils";
 
 export async function POST(req: Request) {
   try {
@@ -50,6 +52,15 @@ export async function POST(req: Request) {
     }
 
     //*valid request
+    
+    pusherServer.trigger(
+      toPusherKey(`user:${idToAdd}:incoming_friend_request`),
+      "incoming_friend_request",
+      {
+        senderId: session.user.id,
+        senderEmail: session.user.email,
+      }
+    );
 
     db.sadd(`user:${idToAdd}:incoming_friend_request`, session.user.id);
 
