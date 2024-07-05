@@ -3,7 +3,7 @@ import { db } from "@/lib/db";
 import { addFriendValidator } from "@/lib/validations/add-friend";
 import { getServerSession } from "next-auth";
 import { z } from "zod";
-import { authOptions } from "../../auth/[...nextauth]/route";
+import { authOptions } from "@/lib/auth";
 import { pusherServer } from "@/lib/pusher";
 import { toPusherKey } from "@/lib/utils";
 

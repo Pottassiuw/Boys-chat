@@ -1,4 +1,4 @@
-import { authOptions } from "@/app/api/auth/[...nextauth]/route";
+import { authOptions } from "@/lib/auth";
 import FriendRequests from "@/components/FriendRequests";
 import { fetchRedis } from "@/helpers/redis";
 import { IncomingMessage } from "http";

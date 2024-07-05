@@ -2,7 +2,7 @@
 
 import { ButtonHTMLAttributes, FC, useState } from "react";
 import { Button } from "./ui/button";
-import { toast } from "./ui/use-toast";
+import { toast } from "react-hot-toast";
 import { Loader2, LogOut } from "lucide-react";
 import { signOut } from "next-auth/react";
 
@@ -19,11 +19,7 @@ const SignOutButton: FC<SignOutButtonProps> = ({ ...props }) => {
         try {
           await signOut();
         } catch (error) {
-          toast({
-            title: "Error",
-            description: "There was an problem signing out",
-            variant: "destructive",
-          });
+          toast.error("Couldn't sign out");
         } finally {
           setIsSigningOut(false);
         }

@@ -5,7 +5,7 @@ import TextAreaAutoSize from "react-textarea-autosize";
 import { Button } from "./ui/button";
 import { Loader2 } from "lucide-react";
 import axios from "axios";
-import { toast } from "./ui/use-toast";
+import { toast } from "react-hot-toast";
 interface ChatInputProps {
   chatPartner: User;
   chatId: string;
@@ -16,17 +16,14 @@ const ChatInput: FC<ChatInputProps> = ({ chatPartner, chatId }) => {
   const [input, setInput] = useState<string>("");
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const sendMessage = async () => {
+    if (!input) return;
     setIsLoading(true);
     try {
       await axios.post("/api/message/send", { text: input, chatId });
       setInput("");
       textAreaRef.current?.focus();
     } catch (error) {
-      toast({
-        title: "Error",
-        description: "Failed to send message",
-        variant: "destructive",
-      });
+      toast.error("Error sending message");
     } finally {
       setIsLoading(false);
     }

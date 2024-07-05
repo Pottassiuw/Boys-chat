@@ -5,22 +5,15 @@ import { FC } from "react";
 import { useState } from "react";
 import { Loader2 } from "lucide-react";
 import { signIn } from "next-auth/react";
-import { useToast } from "@/components/ui/use-toast";
-interface pageProps {}
-
-const page: FC<pageProps> = ({}) => {
+import toast from "react-hot-toast";
+const Page: FC = () => {
   const [isLoading, setIsLoading] = useState<boolean>(false);
-  const { toast } = useToast();
   async function loginWithGoogle() {
     setIsLoading(true);
     try {
       await signIn("google");
     } catch (error) {
-      toast({
-        title: "Error",
-        description: "Something went wrong",
-        variant: "destructive",
-      });
+      toast.error("Coudn't login");
     } finally {
       setIsLoading(false);
     }
@@ -86,4 +79,4 @@ const page: FC<pageProps> = ({}) => {
   );
 };
 
-export default page;
+export default Page;
