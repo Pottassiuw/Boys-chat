@@ -1,0 +1,43 @@
+"filename", "language", "TypeScript", "TypeScript JSX", "CSS", "comment", "blank", "total"
+"d:\Projects\chat-of-the-boys\src\app\(auth)\login\page.tsx", "TypeScript JSX", 0, 80, 0, 0, 3, 83
+"d:\Projects\chat-of-the-boys\src\app\(dashboard)\dashboard\add\loading.tsx", "TypeScript JSX", 0, 14, 0, 0, 4, 18
+"d:\Projects\chat-of-the-boys\src\app\(dashboard)\dashboard\add\page.tsx", "TypeScript JSX", 0, 11, 0, 0, 2, 13
+"d:\Projects\chat-of-the-boys\src\app\(dashboard)\dashboard\chat\[chatId]\loading.tsx", "TypeScript JSX", 0, 73, 0, 0, 4, 77
+"d:\Projects\chat-of-the-boys\src\app\(dashboard)\dashboard\chat\[chatId]\page.tsx", "TypeScript JSX", 0, 78, 0, 0, 14, 92
+"d:\Projects\chat-of-the-boys\src\app\(dashboard)\dashboard\layout.tsx", "TypeScript JSX", 0, 119, 0, 0, 10, 129
+"d:\Projects\chat-of-the-boys\src\app\(dashboard)\dashboard\page.tsx", "TypeScript JSX", 0, 76, 0, 0, 8, 84
+"d:\Projects\chat-of-the-boys\src\app\(dashboard)\dashboard\requests\loading.tsx", "TypeScript JSX", 0, 15, 0, 0, 4, 19
+"d:\Projects\chat-of-the-boys\src\app\(dashboard)\dashboard\requests\page.tsx", "TypeScript JSX", 0, 36, 0, 1, 5, 42
+"d:\Projects\chat-of-the-boys\src\app\api\auth\[...nextauth]\route.ts", "TypeScript", 4, 0, 0, 0, 2, 6
+"d:\Projects\chat-of-the-boys\src\app\api\friends\accept\route.ts", "TypeScript", 47, 0, 0, 1, 11, 59
+"d:\Projects\chat-of-the-boys\src\app\api\friends\add\route.ts", "TypeScript", 62, 0, 0, 2, 11, 75
+"d:\Projects\chat-of-the-boys\src\app\api\friends\deny\route.ts", "TypeScript", 20, 0, 0, 0, 6, 26
+"d:\Projects\chat-of-the-boys\src\app\api\message\send\route.ts", "TypeScript", 60, 0, 0, 2, 13, 75
+"d:\Projects\chat-of-the-boys\src\app\globals.css", "CSS", 0, 0, 78, 0, 22, 100
+"d:\Projects\chat-of-the-boys\src\app\layout.tsx", "TypeScript JSX", 0, 23, 0, 0, 4, 27
+"d:\Projects\chat-of-the-boys\src\app\page.tsx", "TypeScript JSX", 0, 7, 0, 0, 3, 10
+"d:\Projects\chat-of-the-boys\src\components\AddFriendButton.tsx", "TypeScript JSX", 0, 66, 0, 0, 12, 78
+"d:\Projects\chat-of-the-boys\src\components\ChatInput.tsx", "TypeScript JSX", 0, 76, 0, 0, 5, 81
+"d:\Projects\chat-of-the-boys\src\components\FriendRequestSidebarOption.tsx", "TypeScript JSX", 0, 51, 0, 0, 9, 60
+"d:\Projects\chat-of-the-boys\src\components\FriendRequests.tsx", "TypeScript JSX", 0, 88, 0, 0, 14, 102
+"d:\Projects\chat-of-the-boys\src\components\Messages.tsx", "TypeScript JSX", 0, 104, 0, 0, 15, 119
+"d:\Projects\chat-of-the-boys\src\components\MobileChatLayout.tsx", "TypeScript JSX", 0, 168, 0, 2, 17, 187
+"d:\Projects\chat-of-the-boys\src\components\SidebarChatList.tsx", "TypeScript JSX", 0, 89, 0, 1, 15, 105
+"d:\Projects\chat-of-the-boys\src\components\SignOutButton.tsx", "TypeScript JSX", 0, 33, 0, 0, 5, 38
+"d:\Projects\chat-of-the-boys\src\components\UnseenChatToast.tsx", "TypeScript JSX", 0, 65, 0, 0, 6, 71
+"d:\Projects\chat-of-the-boys\src\components\icons.tsx", "TypeScript JSX", 0, 13, 0, 0, 3, 16
+"d:\Projects\chat-of-the-boys\src\components\ui\button.tsx", "TypeScript JSX", 0, 52, 0, 0, 6, 58
+"d:\Projects\chat-of-the-boys\src\helpers\get-friends-by-user-id.ts", "TypeScript", 15, 0, 0, 1, 5, 21
+"d:\Projects\chat-of-the-boys\src\helpers\redis.ts", "TypeScript", 21, 0, 0, 0, 4, 25
+"d:\Projects\chat-of-the-boys\src\lib\auth.ts", "TypeScript", 63, 0, 0, 0, 11, 74
+"d:\Projects\chat-of-the-boys\src\lib\db.ts", "TypeScript", 5, 0, 0, 0, 2, 7
+"d:\Projects\chat-of-the-boys\src\lib\pusher.ts", "TypeScript", 15, 0, 0, 0, 3, 18
+"d:\Projects\chat-of-the-boys\src\lib\utils.ts", "TypeScript", 12, 0, 0, 0, 4, 16
+"d:\Projects\chat-of-the-boys\src\lib\validations\add-friend.ts", "TypeScript", 4, 0, 0, 0, 1, 5
+"d:\Projects\chat-of-the-boys\src\lib\validations\message.ts", "TypeScript", 9, 0, 0, 0, 4, 13
+"d:\Projects\chat-of-the-boys\src\middleware.ts", "TypeScript", 36, 0, 0, 1, 7, 44
+"d:\Projects\chat-of-the-boys\src\types\db.d.ts", "TypeScript", 22, 0, 0, 0, 4, 26
+"d:\Projects\chat-of-the-boys\src\types\next-auth.d.ts", "TypeScript", 15, 0, 0, 0, 3, 18
+"d:\Projects\chat-of-the-boys\src\types\pusher.d.ts", "TypeScript", 4, 0, 0, 0, 1, 5
+"d:\Projects\chat-of-the-boys\src\types\typings.d.ts", "TypeScript", 7, 0, 0, 0, 2, 9
+"Total", "-", 421, 1337, 78, 11, 284, 2131

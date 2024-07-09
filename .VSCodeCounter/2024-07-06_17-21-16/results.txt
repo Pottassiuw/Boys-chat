@@ -1,0 +1,96 @@
+Date : 2024-07-06 17:21:16
+Directory : d:\Projects\chat-of-the-boys\src
+Total : 41 files,  1836 codes, 11 comments, 284 blanks, all 2131 lines
+
+Languages
++----------------+------------+------------+------------+------------+------------+
+| language       | files      | code       | comment    | blank      | total      |
++----------------+------------+------------+------------+------------+------------+
+| TypeScript JSX |         22 |      1,337 |          4 |        168 |      1,509 |
+| TypeScript     |         18 |        421 |          7 |         94 |        522 |
+| CSS            |          1 |         78 |          0 |         22 |        100 |
++----------------+------------+------------+------------+------------+------------+
+
+Directories
++--------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                 | files      | code       | comment    | blank      | total      |
++--------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                    |         41 |      1,836 |         11 |        284 |      2,131 |
+| . (Files)                                                                            |          1 |         36 |          1 |          7 |         44 |
+| app                                                                                  |         17 |        803 |          6 |        126 |        935 |
+| app (Files)                                                                          |          3 |        108 |          0 |         29 |        137 |
+| app\(auth)                                                                           |          1 |         80 |          0 |          3 |         83 |
+| app\(auth)\login                                                                     |          1 |         80 |          0 |          3 |         83 |
+| app\(dashboard)                                                                      |          8 |        422 |          1 |         51 |        474 |
+| app\(dashboard)\dashboard                                                            |          8 |        422 |          1 |         51 |        474 |
+| app\(dashboard)\dashboard (Files)                                                    |          2 |        195 |          0 |         18 |        213 |
+| app\(dashboard)\dashboard\add                                                        |          2 |         25 |          0 |          6 |         31 |
+| app\(dashboard)\dashboard\chat                                                       |          2 |        151 |          0 |         18 |        169 |
+| app\(dashboard)\dashboard\chat\[chatId]                                              |          2 |        151 |          0 |         18 |        169 |
+| app\(dashboard)\dashboard\requests                                                   |          2 |         51 |          1 |          9 |         61 |
+| app\api                                                                              |          5 |        193 |          5 |         43 |        241 |
+| app\api\auth                                                                         |          1 |          4 |          0 |          2 |          6 |
+| app\api\auth\[...nextauth]                                                           |          1 |          4 |          0 |          2 |          6 |
+| app\api\friends                                                                      |          3 |        129 |          3 |         28 |        160 |
+| app\api\friends\accept                                                               |          1 |         47 |          1 |         11 |         59 |
+| app\api\friends\add                                                                  |          1 |         62 |          2 |         11 |         75 |
+| app\api\friends\deny                                                                 |          1 |         20 |          0 |          6 |         26 |
+| app\api\message                                                                      |          1 |         60 |          2 |         13 |         75 |
+| app\api\message\send                                                                 |          1 |         60 |          2 |         13 |         75 |
+| components                                                                           |         11 |        805 |          3 |        107 |        915 |
+| components (Files)                                                                   |         10 |        753 |          3 |        101 |        857 |
+| components\ui                                                                        |          1 |         52 |          0 |          6 |         58 |
+| helpers                                                                              |          2 |         36 |          1 |          9 |         46 |
+| lib                                                                                  |          6 |        108 |          0 |         25 |        133 |
+| lib (Files)                                                                          |          4 |         95 |          0 |         20 |        115 |
+| lib\validations                                                                      |          2 |         13 |          0 |          5 |         18 |
+| types                                                                                |          4 |         48 |          0 |         10 |         58 |
++--------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++--------------------------------------------------------------------------------------+----------------+------------+------------+------------+------------+
+| filename                                                                             | language       | code       | comment    | blank      | total      |
++--------------------------------------------------------------------------------------+----------------+------------+------------+------------+------------+
+| d:\Projects\chat-of-the-boys\src\app\(auth)\login\page.tsx                           | TypeScript JSX |         80 |          0 |          3 |         83 |
+| d:\Projects\chat-of-the-boys\src\app\(dashboard)\dashboard\add\loading.tsx           | TypeScript JSX |         14 |          0 |          4 |         18 |
+| d:\Projects\chat-of-the-boys\src\app\(dashboard)\dashboard\add\page.tsx              | TypeScript JSX |         11 |          0 |          2 |         13 |
+| d:\Projects\chat-of-the-boys\src\app\(dashboard)\dashboard\chat\[chatId]\loading.tsx | TypeScript JSX |         73 |          0 |          4 |         77 |
+| d:\Projects\chat-of-the-boys\src\app\(dashboard)\dashboard\chat\[chatId]\page.tsx    | TypeScript JSX |         78 |          0 |         14 |         92 |
+| d:\Projects\chat-of-the-boys\src\app\(dashboard)\dashboard\layout.tsx                | TypeScript JSX |        119 |          0 |         10 |        129 |
+| d:\Projects\chat-of-the-boys\src\app\(dashboard)\dashboard\page.tsx                  | TypeScript JSX |         76 |          0 |          8 |         84 |
+| d:\Projects\chat-of-the-boys\src\app\(dashboard)\dashboard\requests\loading.tsx      | TypeScript JSX |         15 |          0 |          4 |         19 |
+| d:\Projects\chat-of-the-boys\src\app\(dashboard)\dashboard\requests\page.tsx         | TypeScript JSX |         36 |          1 |          5 |         42 |
+| d:\Projects\chat-of-the-boys\src\app\api\auth\[...nextauth]\route.ts                 | TypeScript     |          4 |          0 |          2 |          6 |
+| d:\Projects\chat-of-the-boys\src\app\api\friends\accept\route.ts                     | TypeScript     |         47 |          1 |         11 |         59 |
+| d:\Projects\chat-of-the-boys\src\app\api\friends\add\route.ts                        | TypeScript     |         62 |          2 |         11 |         75 |
+| d:\Projects\chat-of-the-boys\src\app\api\friends\deny\route.ts                       | TypeScript     |         20 |          0 |          6 |         26 |
+| d:\Projects\chat-of-the-boys\src\app\api\message\send\route.ts                       | TypeScript     |         60 |          2 |         13 |         75 |
+| d:\Projects\chat-of-the-boys\src\app\globals.css                                     | CSS            |         78 |          0 |         22 |        100 |
+| d:\Projects\chat-of-the-boys\src\app\layout.tsx                                      | TypeScript JSX |         23 |          0 |          4 |         27 |
+| d:\Projects\chat-of-the-boys\src\app\page.tsx                                        | TypeScript JSX |          7 |          0 |          3 |         10 |
+| d:\Projects\chat-of-the-boys\src\components\AddFriendButton.tsx                      | TypeScript JSX |         66 |          0 |         12 |         78 |
+| d:\Projects\chat-of-the-boys\src\components\ChatInput.tsx                            | TypeScript JSX |         76 |          0 |          5 |         81 |
+| d:\Projects\chat-of-the-boys\src\components\FriendRequestSidebarOption.tsx           | TypeScript JSX |         51 |          0 |          9 |         60 |
+| d:\Projects\chat-of-the-boys\src\components\FriendRequests.tsx                       | TypeScript JSX |         88 |          0 |         14 |        102 |
+| d:\Projects\chat-of-the-boys\src\components\Messages.tsx                             | TypeScript JSX |        104 |          0 |         15 |        119 |
+| d:\Projects\chat-of-the-boys\src\components\MobileChatLayout.tsx                     | TypeScript JSX |        168 |          2 |         17 |        187 |
+| d:\Projects\chat-of-the-boys\src\components\SidebarChatList.tsx                      | TypeScript JSX |         89 |          1 |         15 |        105 |
+| d:\Projects\chat-of-the-boys\src\components\SignOutButton.tsx                        | TypeScript JSX |         33 |          0 |          5 |         38 |
+| d:\Projects\chat-of-the-boys\src\components\UnseenChatToast.tsx                      | TypeScript JSX |         65 |          0 |          6 |         71 |
+| d:\Projects\chat-of-the-boys\src\components\icons.tsx                                | TypeScript JSX |         13 |          0 |          3 |         16 |
+| d:\Projects\chat-of-the-boys\src\components\ui\button.tsx                            | TypeScript JSX |         52 |          0 |          6 |         58 |
+| d:\Projects\chat-of-the-boys\src\helpers\get-friends-by-user-id.ts                   | TypeScript     |         15 |          1 |          5 |         21 |
+| d:\Projects\chat-of-the-boys\src\helpers\redis.ts                                    | TypeScript     |         21 |          0 |          4 |         25 |
+| d:\Projects\chat-of-the-boys\src\lib\auth.ts                                         | TypeScript     |         63 |          0 |         11 |         74 |
+| d:\Projects\chat-of-the-boys\src\lib\db.ts                                           | TypeScript     |          5 |          0 |          2 |          7 |
+| d:\Projects\chat-of-the-boys\src\lib\pusher.ts                                       | TypeScript     |         15 |          0 |          3 |         18 |
+| d:\Projects\chat-of-the-boys\src\lib\utils.ts                                        | TypeScript     |         12 |          0 |          4 |         16 |
+| d:\Projects\chat-of-the-boys\src\lib\validations\add-friend.ts                       | TypeScript     |          4 |          0 |          1 |          5 |
+| d:\Projects\chat-of-the-boys\src\lib\validations\message.ts                          | TypeScript     |          9 |          0 |          4 |         13 |
+| d:\Projects\chat-of-the-boys\src\middleware.ts                                       | TypeScript     |         36 |          1 |          7 |         44 |
+| d:\Projects\chat-of-the-boys\src\types\db.d.ts                                       | TypeScript     |         22 |          0 |          4 |         26 |
+| d:\Projects\chat-of-the-boys\src\types\next-auth.d.ts                                | TypeScript     |         15 |          0 |          3 |         18 |
+| d:\Projects\chat-of-the-boys\src\types\pusher.d.ts                                   | TypeScript     |          4 |          0 |          1 |          5 |
+| d:\Projects\chat-of-the-boys\src\types\typings.d.ts                                  | TypeScript     |          7 |          0 |          2 |          9 |
+| Total                                                                                |                |      1,836 |         11 |        284 |      2,131 |
++--------------------------------------------------------------------------------------+----------------+------------+------------+------------+------------+
